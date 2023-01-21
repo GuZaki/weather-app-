@@ -1,0 +1,171 @@
+@import "./reset.css";
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700);
+
+html, body{
+    min-height: 100vh;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+/*header*/
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 15px 50px;
+    height: 216px;
+    background: linear-gradient(92.7deg, #4CB8C4 0%, #3CD3AD 100%);
+    width: 100%;
+}
+
+.title{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.18;/*52px/44px*/
+    align-items: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+    height: 54px;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.input{
+    flex-grow: 1;
+    padding: 15px;
+
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+    color: #000;
+}
+
+.btn{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+
+    width: 145px;
+    height: 54px;
+    border-radius: 6px;
+    color: #fff;
+    background: #ED3052;
+
+    transition: background-color 0.2s ease-in;
+}
+
+.btn:hover{
+    background: #e21339;
+}
+
+/*card*/
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    padding: 30px;
+    min-width: 360px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 5px 20px 0px #1B6C7240; 
+}
+
+.card::before{
+    content: '';
+
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    z-index: -1;
+
+    width: calc(100% - 20px);
+    height: 100%;
+
+    background-color: #e21339;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 5px 20px 0px #1B6C7240;
+}
+
+.card-city{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #000;
+}
+
+.card-city span{
+    display: inline-block;
+    vertical-align: text-top;
+
+    padding: 3px 5px;
+    border-radius: 6px;
+    background: #E5464F;
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.card-weather{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-value{
+    font-size: 92px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.card-value sup{
+    font-size: 50%;
+}
+
+.cadr-description{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.card-img{
+    width: 126px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/*footer*/
+.footer{
+    padding: 8px 15px;
+    width: 100%;
+
+    margin-top: auto;/*вниз опускаем футер*/
+
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+
+    background: #E3F1EE;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #2E7695;
+}
