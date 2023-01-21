@@ -48,7 +48,7 @@ header.insertAdjacentHTML('afterend', html);
 
 //Делаем запрос на сервер для получения данных
 async function getWeather(city){
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`; //адрес запроса
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`; //адрес запроса
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
